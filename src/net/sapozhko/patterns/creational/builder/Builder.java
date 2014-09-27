@@ -2,5 +2,9 @@ package net.sapozhko.patterns.creational.builder;
 
 public interface Builder {
 
-    Product build();
+    void buildName();
+
+    void buildNumber();
+
+    Product getProduct();
 }

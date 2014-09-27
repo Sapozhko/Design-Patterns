@@ -8,6 +8,7 @@ public class BuilderExample {
 
     public static void main(String[] args) {
         Director director = new Director(new ConcreteBuilder());
+        director.constructProduct();
         Product product = director.getProduct();
         System.out.println(product);
     }

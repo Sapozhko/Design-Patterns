@@ -8,7 +8,12 @@ public class Director {
         this.builder = builder;
     }
 
+    public void constructProduct() {
+        builder.buildName();
+        builder.buildNumber();
+    }
+
     public Product getProduct() {
-        return builder.build();
+        return builder.getProduct();
     }
 }
